@@ -1,0 +1,14 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.main {
+  padding-top: 36px;
+  padding-left: 24px;
+}
