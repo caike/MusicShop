@@ -1,0 +1,16 @@
+.sidebar {
+  position: fixed;
+  top: 30px;
+  bottom: 0;
+  display: block;
+  background: white;
+  font-size: 1.8em;
+  padding: 10px; }
+  .sidebar h2 {
+    padding: 23px; }
+  .sidebar ul {
+    list-style-type: none; }
+
+.main {
+  padding-top: 36px;
+  padding-left: 24px; }

@@ -6,13 +6,19 @@
   background: white;
   font-size: 1.8em;
   padding: 10px;
+
+  h2 {
+    padding: 23px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
 }
 
-.sidebar ul {
-  list-style-type: none;
-}
 
 .main {
   padding-top: 36px;
   padding-left: 24px;
 }
+
