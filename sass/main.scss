@@ -1,8 +1,13 @@
+@import 'bootstrap';
+
 body {
   color: #fff;
 }
 
 .sidebar {
+  @extend .col-sm-3;
+  @extend .col-md-3;
+
   background: #4D407A;
   position: fixed;
   top: 0px;
@@ -24,6 +29,11 @@ body {
 
 
 .main {
+  @extend .col-sm-9;
+  @extend .col-sm-offset-3;
+  @extend .col-md-9;
+  @extend .col-md-offset-3;
+
   color: #000;
   padding-top: 36px;
   padding-left: 24px;

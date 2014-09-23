@@ -4,20 +4,19 @@
   <meta charset="UTF-8">
   <title>Music Shop</title>
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <div class="row">
-    <div class="col-sm-3 col-md-3 sidebar" ng-controller="SideBarCtrl as sidebar">
+    <div class="sidebar" ng-controller="SideBarCtrl as sidebar">
       <h2>Music Shop</h2>
       <ul>
         <li ng-repeat="category in categories">{{category}}</li>
       </ul>
     </div>
 
-    <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 main">
+    <div class="main">
       <h2>Recent additions</h2>
     </div>
   </div>
