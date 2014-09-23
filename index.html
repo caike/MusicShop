@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MusicShop">
 <head>
   <meta charset="UTF-8">
   <title>Music Shop</title>
@@ -10,12 +10,10 @@
 
 <body>
   <div class="row">
-    <div class="col-sm-3 col-md-3 sidebar">
+    <div class="col-sm-3 col-md-3 sidebar" ng-controller="SideBarCtrl as sidebar">
       <h2>Music Shop</h2>
       <ul>
-        <li>Guitar</li>
-        <li>Bass</li>
-        <li>Drums</li>
+        <li ng-repeat="category in categories">{{category}}</li>
       </ul>
     </div>
 
@@ -23,6 +21,8 @@
       <h2>Recent additions</h2>
     </div>
   </div>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular.min.js" charset="utf-8"></script>
+  <script src="js/client.js" charset="utf-8"></script>
 </body>
 
 </html>
