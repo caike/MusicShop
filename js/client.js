@@ -9,4 +9,12 @@
 
   });
 
+  app.controller("MainCtrl", function($scope) {
+    $scope.instruments = [
+      { name: 'Fender Precision', category: 'Bass' },
+      { name: 'Gibson Les Paul Standard', category: 'Guitar' },
+      { name: 'TAMA Swingstar ', category: 'Drums' }
+    ];
+  });
+
 })();
