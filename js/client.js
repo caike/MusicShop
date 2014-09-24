@@ -9,7 +9,8 @@
 
     $scope.instruments = [
       { name: 'Fender Precision', category: 'Bass' },
-      { name: 'Gibson Les Paul Standard', category: 'Guitar' },
+      { name: 'Gibson Les Paul Standard', category: 'Guitar',
+    image: 'http://www.worldsguitar.com/2008-gibson-les-paul-standard-ebony.JPG' },
       { name: 'TAMA Swingstar ', category: 'Drums' }
     ];
 
@@ -21,9 +22,16 @@
 
     function setCurrentCategory(category) {
       $scope.currentCategory = category;
+      isCurrentCategory();
     }
 
     $scope.setCurrentCategory = setCurrentCategory;
+
+    function isCurrentCategory (category) {
+      return $scope.currentCategory === category;
+    }
+
+    $scope.isCurrentCategory = isCurrentCategory;
 
   });
 

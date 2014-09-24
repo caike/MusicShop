@@ -25,17 +25,47 @@ body {
     font-size: 18px;
     font-weight: 200;
   }
+
+  p a {
+    color: #ccc;
+  }
+  li a:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+
+  li:hover {
+   margin-right: -20px;
+   background-color: rgba(204, 204, 204, 0.09);
+  }
+
+  li {
+    padding: 10px;
+    margin-right: -20px;
+    cursor: pointer;
+   }
+
+   li.active {
+     background-color: #fff;
+   }
+
 }
 
 
 .main {
   @extend .col-sm-9;
   @extend .col-sm-offset-3;
+
   @extend .col-md-9;
   @extend .col-md-offset-3;
 
   color: #000;
   padding-top: 36px;
   padding-left: 24px;
+
+  h2 {
+    font-size: 15px;
+    color: #DBDBDB;
+  }
 }
 

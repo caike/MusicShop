@@ -4596,8 +4596,25 @@ body {
     list-style-type: none;
     font-size: 18px;
     font-weight: 200; }
+  .sidebar p a {
+    color: #ccc; }
+  .sidebar li a:hover {
+    color: #428bca;
+    text-decoration: none; }
+  .sidebar li:hover {
+    margin-right: -20px;
+    background-color: rgba(204, 204, 204, 0.09); }
+  .sidebar li {
+    padding: 10px;
+    margin-right: -20px;
+    cursor: pointer; }
+  .sidebar li.active {
+    background-color: #fff; }
 
 .main {
   color: #000;
   padding-top: 36px;
   padding-left: 24px; }
+  .main h2 {
+    font-size: 15px;
+    color: #DBDBDB; }
