@@ -34,10 +34,8 @@
           <h3>{{instrument.name}}</h3>
           <p>$1,350 in <em>Oviedo, FL</em></p>
 
-          <div ng-hide="instrument.image === undefined" class="image">
-            <img ng-hide="currentCategory === undefined"
-              class="img-thumbnail" width="400" height="400"
-              src="{{instrument.image}}"/>
+          <div ng-show="!!instrument.image" class="image">
+            <img class="img-thumbnail" width="400" height="400" src="{{instrument.image}}"/>
           </div>
         </div>
       </p>
