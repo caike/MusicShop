@@ -34,6 +34,12 @@
 
     $scope.isCurrentCategory = isCurrentCategory;
 
+    function isCategorySet() {
+      return $scope.currentCategory !== undefined;
+    }
+
+    $scope.isCategorySet = isCategorySet;
+
   });
 
 })();

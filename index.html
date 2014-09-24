@@ -26,7 +26,7 @@
     </div>
 
     <div class="main">
-      <h2 ng-show="isCurrentCategory()">Recent additions</h2>
+      <h2 ng-hide="isCategorySet()">Recent additions</h2>
       <p>
         <div class="instrument"
           ng-repeat="instrument in instruments | filter:{category:currentCategory}">
