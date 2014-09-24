@@ -8,10 +8,12 @@
     $scope.categories = ['Guitar', 'Bass', 'Drums'];
 
     $scope.instruments = [
-      { name: 'Fender Precision', category: 'Bass' },
+      { name: 'Fender Precision', category: 'Bass',
+        image: 'http://guitarphotographer.com/fender-bass-guitar-photos/1979--fretless-precision-bass.jpg' },
       { name: 'Gibson Les Paul Standard', category: 'Guitar',
-    image: 'http://www.worldsguitar.com/2008-gibson-les-paul-standard-ebony.JPG' },
-      { name: 'TAMA Swingstar ', category: 'Drums' }
+        image: 'http://www.worldsguitar.com/2008-gibson-les-paul-standard-ebony.JPG' },
+      { name: 'TAMA Swingstar ', category: 'Drums',
+        image: 'http://www.larrysmusiccenter.com/oh-music-store/media/catalog/product/cache/1/image/6b007766109e51f8885c73559e300614/i/m/img_8101.jpg' }
     ];
 
     // TIL if you set this to null, then
