@@ -39,6 +39,12 @@
 
     $scope.isCategorySet = isCategorySet;
 
+    function shouldDisplayImage(instrument) {
+      return isCategorySet() && !!instrument.image;
+    }
+
+    $scope.shouldDisplayImage = shouldDisplayImage;
+
   });
 
 })();

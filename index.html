@@ -34,7 +34,7 @@
           <h3>{{instrument.name}}</h3>
           <p>$1,350 in <em>Oviedo, FL</em></p>
 
-          <div ng-show="!!instrument.image" class="image">
+          <div ng-show="shouldDisplayImage(instrument)" class="image">
             <img class="img-thumbnail" width="400" height="400" src="{{instrument.image}}"/>
           </div>
         </div>
