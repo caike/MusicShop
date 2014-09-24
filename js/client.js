@@ -24,7 +24,6 @@
 
     function setCurrentCategory(category) {
       $scope.currentCategory = category;
-      isCurrentCategory();
     }
 
     $scope.setCurrentCategory = setCurrentCategory;
