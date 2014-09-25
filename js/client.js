@@ -38,14 +38,6 @@
     }
 
     $scope.isCategorySet = isCategorySet;
-
-    function shouldDisplayImage(instrument) {
-      alert('calling!');
-      return isCategorySet() && !!instrument.image;
-    }
-
-    $scope.shouldDisplayImage = shouldDisplayImage;
-
   });
 
   app.directive('myInstrument', function() {
