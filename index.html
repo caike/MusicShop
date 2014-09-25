@@ -31,12 +31,10 @@
         <div class="instrument"
           ng-repeat="instrument in instruments | filter:{category:currentCategory}">
 
-          <h3>{{instrument.name}}</h3>
-          <p>$1,350 in <em>Oviedo, FL</em></p>
+          <my-instrument
+          instrument='instrument'
+          current-category='currentCategory'></my-instrument>
 
-          <div ng-show="shouldDisplayImage(instrument)" class="image">
-            <img class="img-thumbnail" width="400" height="400" src="{{instrument.image}}"/>
-          </div>
         </div>
       </p>
     </div>

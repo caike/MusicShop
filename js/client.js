@@ -40,11 +40,30 @@
     $scope.isCategorySet = isCategorySet;
 
     function shouldDisplayImage(instrument) {
+      alert('calling!');
       return isCategorySet() && !!instrument.image;
     }
 
     $scope.shouldDisplayImage = shouldDisplayImage;
 
+  });
+
+  app.directive('myInstrument', function() {
+    return {
+      restrict: 'E',
+      scope: {
+        instrument: '=',
+        currentCategory: '='
+      },
+      link: function(scope) {
+        scope.shouldDisplayImage = function(instrument) {
+          return !!scope.currentCategory &&
+            scope.currentCategory === instrument.category &&
+            !!instrument.image;
+        };
+      },
+      templateUrl: 'my-instrument.html',
+    }
   });
 
 })();
