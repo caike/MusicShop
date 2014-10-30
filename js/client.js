@@ -1,9 +1,11 @@
 (function() {
   'use strict';
 
-  var app = angular.module('MusicShop', []);
+  angular.module("MusicShop", []).
+    controller("MainCtrl", MainController).
+    directive("myInstrument", MyInstrument);
 
-  app.controller("MainCtrl", function($scope) {
+  function MainController($scope) {
 
     $scope.categories = ['Guitar', 'Bass', 'Drums'];
 
@@ -38,9 +40,9 @@
     }
 
     $scope.isCategorySet = isCategorySet;
-  });
+  }
 
-  app.directive('myInstrument', function() {
+  function MyInstrument(){
     return {
       restrict: 'E',
       scope: {
@@ -56,6 +58,6 @@
       },
       templateUrl: 'my-instrument.html',
     }
-  });
+  }
 
 })();
