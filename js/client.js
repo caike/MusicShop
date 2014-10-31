@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module("music-shop").
+  angular.module("app.music-shop").
     controller("MainCtrl", MainController);
 
   function MainController($scope) {

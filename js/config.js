@@ -1,3 +1,3 @@
 (function(){
-  angular.module('music-shop', []);
+  angular.module("app", ["app.music-shop"]);
 })();
