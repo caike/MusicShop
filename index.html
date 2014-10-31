@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="MusicShop">
+<html lang="en" ng-app="music-shop">
 <head>
   <meta charset="UTF-8">
   <title>Music Shop</title>
@@ -32,16 +32,24 @@
           ng-repeat="instrument in instruments | filter:{category:currentCategory}">
 
           <my-instrument
-          instrument='instrument'
-          current-category='currentCategory'></my-instrument>
+            instrument='instrument'
+            current-category='currentCategory'></my-instrument>
 
         </div>
       </p>
+
     </div>
 
   </div>
   <script
     src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.2/angular.min.js"
+    charset="utf-8"></script>
+
+  <script
+    src="js/config.js"
+    charset="utf-8"></script>
+  <script
+    src="js/my-instrument.js"
     charset="utf-8"></script>
   <script
     src="js/client.js"

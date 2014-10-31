@@ -1,9 +1,8 @@
 (function() {
   'use strict';
 
-  angular.module("MusicShop", []).
-    controller("MainCtrl", MainController).
-    directive("myInstrument", MyInstrument);
+  angular.module("music-shop").
+    controller("MainCtrl", MainController);
 
   function MainController($scope) {
 
@@ -40,24 +39,6 @@
     }
 
     $scope.isCategorySet = isCategorySet;
-  }
-
-  function MyInstrument(){
-    return {
-      restrict: 'E',
-      scope: {
-        instrument: '=',
-        currentCategory: '='
-      },
-      link: function(scope) {
-        scope.shouldDisplayImage = function(instrument) {
-          return !!scope.currentCategory &&
-            scope.currentCategory === instrument.category &&
-            !!instrument.image;
-        };
-      },
-      templateUrl: 'my-instrument.html',
-    }
   }
 
 })();
